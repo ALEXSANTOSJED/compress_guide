@@ -1,4 +1,21 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+/* ----------------------------------------
+/*após o ";" basta colocar: Options compress=yes reuse=yes; */ exemplo de aplicação em query abaixo*/
+
+Code exported from SAS Enterprise Guide
+DATE: segunda-feira, 25 de julho de 2022     TIME: 18:21:42
+PROJECT: 4_Sinais Vitais em Point Click_v0
+PROJECT PATH: C:\Users\Jump Label\OneDrive - EDITORA E DISTRIBUIDORA EDUCACIONAL S A\Documentos\alex\Novo SAS\Marketing\Simulador\Projeto de receita\Arquivo finais projeto Michelangelo\4_Sinais Vitais em Point Click_v0.egp
+---------------------------------------- */
+
+/* Library assignment for DATALAKE_BI.ESDISTGS */
+Libname ESDISTGS META  REPNAME='Foundation' LIBURI="SASLibrary?*[@Name='ESPELHO_DIARIO_STAGE_SAS'][DeployedComponents/ServerContext[@Name='DATALAKE_BI']]";
+/* Library assignment for DATALAKE_BI.SASPUBLI */
+;
+Options compress=yes reuse=yes;
+
+Libname WORK_DIR "\\XXXXXXXXXX\sas_publico\WORK_SAS";
+
+option user=WORK_DIR;
+
+/* Conditionally delete set of tables or views, if they exists          */
+/* If the member does not exist, then no action is performed   */
